@@ -1,5 +1,8 @@
 import React from 'react'
 import starIcon from "../images/star.png"
+import searchIcon from "../images/icons8-search-30.png"
+import visualIcon from "../images/icons8-client-management-48.png"
+import menu from "../images/menu.png"
 
 const Header = () => {
 
@@ -15,9 +18,9 @@ const Header = () => {
           <div className="space"></div>
           <div>
             <form className="searchbox">
-              <button className="button"><a href="https://unsplash.com/"><img src="icons8-search-30.png" alt="search" width="25" height="24" /></a></button>
+              <button className="button"><a href="https://unsplash.com/"><img src={searchIcon} alt="search" width="25" height="24" /></a></button>
               <input className="search" type="search" name="search" placeholder="Search free high-resolution photos" />
-              <button className="visual_button"><a href="https://unsplash.com/"><img src="icons8-client-management-48.png" alt="visual" width="40" height="34" /></a></button>
+              <button className="visual_button"><a href="https://unsplash.com/"><img src={visualIcon} alt="visual" width="40" height="34" /></a></button>
             </form>
           </div>
           <div>
@@ -43,7 +46,7 @@ const Header = () => {
           <div className="space6"></div>
           <div className="menu">
             <button>
-              <a href="unsplash.com"><img src="menu.png" alt="menu" width="15" height="10" /></a>
+              <a href="unsplash.com"><img src={menu} alt="menu" width="15" height="10" /></a>
             </button>
           </div>
 
@@ -56,7 +59,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="space7"></div>
-        <div style={{ width: "100 %" }}>
+        <div style={{ width: "100%" }}>
           <ul className="click2">
             <li><a href="https://unsplash.com/t/current-events">Current Events</a></li>
             <li><a href="https://unsplash.com/t/wallpapers">Wallpapers</a></li>
