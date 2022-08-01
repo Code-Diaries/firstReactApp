@@ -1,17 +1,13 @@
 import "./scss/App.scss";
-import NavBar from "./component/NavBar";
 import Header from "./component/Header";
-import Section from "./component/Section";
-import Image   from "./component/Image";
+import Cover from "./component/Cover";
+import Images from "./component/Images";
 function App() {
   return (
-    <div classNameName="App">
-      <header className="head">
-        <NavBar />
-        <Header />
-      </header>
-<Section/>
-<Image/>
+    <div className="App">
+      <Header />
+      <Cover />
+      <Images />
     </div>
   );
 }
