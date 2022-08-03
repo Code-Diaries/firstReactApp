@@ -1,3 +1,7 @@
+import React from 'react'
+
+const Bigpart = () => {
+  return (
     <div class="bigpart">
             <div class="textpart">
                 <div class="firstspan">
@@ -17,3 +21,7 @@
                 </h2>
             </div>
     </div>
+  )
+}  
+
+export default Bigpart

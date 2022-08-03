@@ -1,3 +1,7 @@
+import React from 'react'
+
+const Section= () => {
+  return (
         <div class="section">
             <ul class="smalllist">
                 <li><a href="https://unsplash.com/"></a> Editorial</li>
@@ -21,3 +25,6 @@
                 <li><a href="https://unsplash.com/t/street-photography">Photography</a></li>
             </ul>
         </div>
+  )
+}
+export default Section

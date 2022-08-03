@@ -1,3 +1,7 @@
+import React from 'react'
+
+const Photopart = () => {
+  return (
     <div class="photo-part">
         <div class="photo-part1">
             <img src="https://images.unsplash.com/photo-1657299142312-5e12a754ff0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="first1"></img>
@@ -21,3 +25,6 @@
             <img src="https://images.unsplash.com/photo-1658544088614-5f96b968cd5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="thirt5"></img>
         </div>
     </div>
+  )
+}
+export default Photopart

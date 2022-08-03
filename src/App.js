@@ -1,19 +1,19 @@
 import "./scss/App.scss";
-import bigpart from "./component/bigpart";
-import navbar from "./component/navbar";
-import photopart from "./component/photopart";
-import section from "./component/section";
+import Bigpart from "./component/Bigpart";
+import NavBar from "./component/NavBar";
+import Photopart from "./component/Photopart";
+import Section from "./component/Section";
 function App() {
   return (
     <div className="App">
       <header className="head">
           
-          <navbar/>
-          <section/>
+          <NavBar/>
+          <Section/>
       
       </header>
-      <bigpart/>
-      <photopart/>
+      <Bigpart/>
+      <Photopart/>
        
     </div>
 
