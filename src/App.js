@@ -7,8 +7,9 @@ import Image from "./component/Image";
 function App() {
   return (
     <div>
-      <NavBar />
+      
       <Header />
+      <NavBar />
       <Section/>
       <Image/>
     </div>
