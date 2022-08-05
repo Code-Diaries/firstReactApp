@@ -1,19 +1,17 @@
- 
+@import './variables.scss';
 
 * { 
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #767676;
+    color: $my_gray_dark;
     font-family: -apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Helvetica,Ubuntu,Roboto,Noto,Segoe UI,Arial,sans-serif;
-  }
-
- 
+  } 
   
   header {
     position: sticky;
     top: 0;
-    font-size: 14px;
+    font-size: $font_14;
     z-index: 5;
   }
   
@@ -33,7 +31,7 @@
   }
   
   button svg {
-    fill: #767676;
+    fill:  $my_gray_dark;;
   }
   
   .buttonone {
@@ -90,11 +88,11 @@
     background-color: white;
     border-radius: 5px;
     border-style: solid; border-width: 1px; 
-    border-color: #767676;   
+    border-color:  $my_gray_dark;
   }
   
   .svgthree {
-    fill: #767676;
+    fill:  $my_gray_dark;;
     margin-right: 20px;
   }
   
@@ -128,7 +126,7 @@
   
   .bigpart {
     height: 594px;
-    background-color: #767676;
+    background-color:  $my_gray_dark;;
     background:url(https://images.unsplash.com/photo-1657047211843-2d7fa44553b0?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1vZi10aGUtZGF5fHx8fGVufDB8fHx8&amp;auto=format%2Ccompress&amp;fit=crop&amp;w=1000&amp;h=1000);
     background-size: 100% 100%;
     margin-bottom: 48px;
