@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import starIcon from "../images/star.png"
 import searchIcon from "../images/icons8-search-30.png"
 import visualIcon from "../images/icons8-client-management-48.png"
 import menu from "../images/menu.png"
 
 const Header = () => {
+  const [isOpen, setİsOpen] = useState(false)
+  const openMenu = () => {
+    setİsOpen(!isOpen)
+
+  }
 
   return (
     <div className="headerDiv">
@@ -46,8 +51,25 @@ const Header = () => {
           <div className="space6"></div>
           <div className="menu">
             <button>
-              <a href="unsplash.com"><img src={menu} alt="menu" width="15" height="10" /></a>
+              <a href="unsplash.com"><img onClick={openMenu} src={menu} alt="menu" width="15" height="10" /></a>
             </button>
+            {
+              isOpen ?
+                <div>
+                  <nav class="navbar bg-light">
+                    <div class="container">
+                      <ul>
+                        <li>Erster Eintrag</li>
+                        <li>Zweiter Eintrag</li>
+                        <li>Dritter Eintrag</li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+
+                : <div></div>
+
+            }
           </div>
 
         </nav>
