@@ -50,8 +50,8 @@ const Header = () => {
           </div>
           <div className="space6"></div>
           <div className="menu">
-            <button>
-              <a href="unsplash.com"><img onClick={openMenu} src={menu} alt="menu" width="15" height="10" /></a>
+            <button onClick={openMenu}>
+              <a href="unsplash.com"><img src={menu} alt="menu" width="15" height="10" /></a>
             </button>
             {
               isOpen ?
