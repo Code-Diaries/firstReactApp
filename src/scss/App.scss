@@ -265,3 +265,11 @@ h1,span,h1 a {
   border: none;
   padding: 0px;
 }
+.onclick{
+  border: 1px solid rgba(128, 128, 128, 0.103);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  gap:10px;
+}

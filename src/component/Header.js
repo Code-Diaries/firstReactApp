@@ -24,11 +24,11 @@ const Header = () => {
    
     const MoreLinks = () => {
         return(
-        <div>
-            <ul>
-               <li>First</li>
-               <li>Second</li>
-               <li>Third</li>
+        <div >
+            <ul className="onclick">
+               <li className="lis1"> <a href="https://unsplash.com">First</a></li>
+               <li className ="lis1"><a href="https://unsplash.com">Second</a></li>
+               <li className ="lis1"><a href="https://unsplash.com">Third</a></li>
             </ul>
 
         </div>
