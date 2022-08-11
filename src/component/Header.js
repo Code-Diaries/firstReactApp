@@ -3,9 +3,40 @@ import resim1 from '../img/download.png'
 import resim2 from '../img/search.png'
 import resim3 from '../img/visual-1.png'
 import resim4 from '../img/download  -menu.png'
+import { useState } from 'react';
+
+
+
+
+
+
+
 
 
 const Header = () => {
+
+    const[moreLinks,setMoreLinks]=useState(false)
+  
+    function ChangeMoreLinks(){
+    setMoreLinks(!moreLinks)
+   }
+   
+   
+    const MoreLinks = () => {
+        return(
+        <div>
+            <ul>
+               <li>First</li>
+               <li>Second</li>
+               <li>Third</li>
+            </ul>
+
+        </div>
+        ) 
+        }
+    
+    
+
   return (
     <div>
          <header className="header"/>
@@ -66,9 +97,13 @@ const Header = () => {
 
 
                 <div className="menu" >
-                <button className="menu1">
-                    <a href="https://unsplash.com"> <img src={resim4} alt="menu" width="20" height="20"/></a>
+                <button className="menu1" onClick={ChangeMoreLinks}>
+                     <img src={resim4} alt="menu" width="20" height="20"/>
                 </button>
+                {(moreLinks)? ( <div><MoreLinks/></div>)
+                    : (<div></div>)
+                    }
+
 
                 </div>
 
