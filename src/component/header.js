@@ -8,7 +8,7 @@ const Header = () => {
   const [isOpen, setİsOpen] = useState(false)
   const openMenu = () => {
     setİsOpen(!isOpen)
-
+    console.log(isOpen)
   }
 
   return (
@@ -51,11 +51,11 @@ const Header = () => {
           <div className="space6"></div>
           <div className="menu">
             <button>
-              <a href="unsplash.com"><img onClick={() => openMenu(!isOpen)} src={menu} alt="menu" width="15" height="10" /></a>
+              <a href="unsplash.com"><img onClick={openMenu} src={menu} alt="menu" width="15" height="10" /></a>
             </button>
             {
               isOpen ?
-                <div>
+                (<div>
                   <nav class="navbar bg-light">
                     <div class="container">
                       <ul>
@@ -65,9 +65,9 @@ const Header = () => {
                       </ul>
                     </div>
                   </nav>
-                </div>
+                </div>)
 
-                : <div></div>
+                : (<div></div>)
 
             }
           </div>
